@@ -198,7 +198,7 @@ function showVideoModal() {
                     </iframe>
                 </div>
                 <h3>Our Story: Powering Yemen's Future</h3>
-                <p>Watch how GreenPower Solutions has been transforming communities across Yemen with sustainable energy solutions.</p>
+                <p>Watch how Lidien Ventures has been transforming communities across Yemen with sustainable energy solutions.</p>
             </div>
         </div>
     `;

@@ -29,12 +29,12 @@ function calculateSavings() {
     const size = document.getElementById('size').value;
     const result = document.getElementById('calculator-result');
     
-    // Sample calculation data
+    // Sample calculation data (amounts in KSh)
     const savings = {
-        lpg: { small: 25, medium: 40, large: 65, business: 150 },
-        solar: { small: 45, medium: 75, large: 120, business: 350 },
-        borehole: { small: 30, medium: 50, large: 80, business: 200 },
-        biogas: { small: 35, medium: 55, large: 90, business: 180 }
+        lpg: { small: 2000, medium: 3200, large: 5200, business: 12000 },
+        solar: { small: 3600, medium: 6000, large: 9600, business: 28000 },
+        borehole: { small: 2400, medium: 4000, large: 6400, business: 16000 },
+        biogas: { small: 2800, medium: 4400, large: 7200, business: 14400 }
     };
     
     const co2Savings = {
@@ -48,7 +48,7 @@ function calculateSavings() {
     const co2Reduction = co2Savings[solutionType][size];
     
     // Update the display
-    document.querySelector('.savings-amount').textContent = `$${monthlySavings}`;
+    document.querySelector('.savings-amount').textContent = `KSh ${monthlySavings.toLocaleString()}`;
     document.querySelector('.co2-savings').textContent = co2Reduction;
     
     // Show result with animation
